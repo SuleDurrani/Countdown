@@ -10,7 +10,6 @@ def importFile():
         count = 0
         for i in newList:
             if '-' not in i:
-                # print(newList[count])
                 returnList.append(newList[count])
             count += 1
         return returnList
@@ -77,8 +76,8 @@ def countWordsAtLength(words):
     print(f"\nIn your input string there are {length9} nines, {length8} eights, and {length7} seven letter words.\n")
 
 
-def lettersRound():
-    letters = generateLetters()
+def lettersRound(letters):
+    #letters = generateLetters()
     t0 = time.time()
     words = importFile()
     words = reduceWordCount(words)
